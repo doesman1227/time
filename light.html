@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>01 光の速さは、誰から見ても同じ ｜ 時間とは何か</title>
+<meta name="description" content="速度は足し算になるはずなのに、光だけはならない。マイケルソン・モーリーの実験、相対性原理と光速不変の原理、速度の合成則、そして「何に対しての速さなのか」という問い。相対性理論の出発点を確かめる章。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <marker id="ar-i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+    <marker id="ar-e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+    <marker id="ar-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="sitemark" href="index.html">TIME ｜ 時間とは何か</a>
+    <a class="back" href="../">← m-note トップ</a>
+  </div>
+</header>
+
+<nav class="crumb" aria-label="パンくず">
+  <a href="index.html">時間とは何か</a><span>›</span><span>第1部</span><span>›</span><span>01 光の速さは、誰から見ても同じ</span>
+</nav>
+
+<main class="wrap">
+
+  <p class="part-label">第1部 特殊相対性理論 ／ 01</p>
+  <h1>光の速さは、<br><span class="em">誰から見ても同じ</span></h1>
+  <p class="lede">時間の話を始めるのに、まず光の話から入る。遠回りに見えるが、逆だった。時間が遅れる理由をどこまでも掘っていくと、最後に残るのはこの一点だけになる。ここが動かせない土台で、時間のほうが土台に合わせて動く。</p>
+
+  <div class="summary">
+    <span class="k">この章の要点</span>
+    <ul>
+      <li>速度はふつう足し算になる。電車の上で投げたボールは、地上から見れば電車の分だけ速い。</li>
+      <li>ところが<strong>光だけは足し算にならない</strong>。誰が、どんな速さで動きながら測っても、光の速さは同じ値になる。</li>
+      <li>「何に対して止まっているか」の絶対的な基準は、探しても見つからなかった。</li>
+      <li>この二つを認めると、時間と空間のほうが観測者ごとに変わらざるをえなくなる。</li>
+    </ul>
+  </div>
+
+  <section class="ch">
+    <h2>速度は、足し算になるはずだった</h2>
+
+    <p>時速100kmで走る電車の中で、進行方向に時速20kmでボールを投げる。地上に立っている人から見れば、ボールは時速120kmで飛んでいく。誰でも納得できるし、実際その通りになる。速さというのは、こうやって足したり引いたりできる量だ——ガリレオの時代から、それが当たり前だった。</p>
+
+    <p>ならば光でも同じはずだ。光速の90%で飛ぶ宇宙船から、前方に光を出す。外から見れば、光は<span class="err">光速の1.9倍</span>で進んでいるように見えるだろう。そう予想して測ってみると、そうならない。光はやはり、ちょうど光速で進んでいる。</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 210" role="img" aria-labelledby="f1-t">
+        <title id="f1-t">速度の足し算が、光では成り立たない</title>
+        <text class="lb" x="16" y="18">ふつうの物体 — 足し算になる</text>
+        <rect class="box" x="16" y="28" width="292" height="58" rx="8"/>
+        <text x="34" y="52">電車 ＝ 時速100km</text>
+        <text x="34" y="74">ボール ＝ 時速20km</text>
+        <path class="s-f" d="M322 57 H384" marker-end="url(#ar-f)"/>
+        <rect class="box" x="398" y="28" width="226" height="58" rx="8"/>
+        <text class="ti" x="416" y="63">地上からは 時速120km</text>
+
+        <text class="lb" x="16" y="134">光 — 足し算にならない</text>
+        <rect class="box" x="16" y="144" width="292" height="58" rx="8"/>
+        <text x="34" y="168">宇宙船 ＝ 光速の90%</text>
+        <text x="34" y="190">前方に出した光 ＝ 光速 c</text>
+        <path class="s-e" d="M322 173 H384" marker-end="url(#ar-e)"/>
+        <rect class="box" x="398" y="144" width="226" height="58" rx="8"/>
+        <text class="te" x="416" y="179">外から見ても c のまま</text>
+      </svg>
+      <figcaption>上は日常の感覚どおり。下も同じように足し算になるはずだが、実際には光速を超えない。宇宙船の中の人も、外の人も、同じ光を測って同じ c を得る。</figcaption>
+    </figure>
+
+    <p>19世紀の終わり、光は「エーテル」という見えない媒質の波だと考えられていた。音が空気を伝わるように、光も何かを伝わっているはずだ、と。もしそうなら、地球はエーテルの中を公転しているのだから、進行方向とその横向きとでは光の速さが違って測れるはずだった。</p>
+
+    <p>1887年、マイケルソンとモーリーがこの差を測る実験を行った。装置の精度は十分にあったのに、差は出なかった。地球がどちらを向いていても、光の速さは同じだった。その後、光共振器を使った現代の実験でも、けた違いの精度で同じ結論が繰り返されている。</p>
+  </section>
+
+  <section class="ch">
+    <h2>そこで、前提のほうを取り替えた</h2>
+
+    <p>1905年、アインシュタインは説明を諦めるかわりに、観測されたことをそのまま出発点に据えた。特殊相対性理論が置いた前提は、たった二つしかない。</p>
+
+    <ol class="steps">
+      <li>
+        <span class="t">相対性原理</span>
+        <p>等速で動いているすべての立場（慣性系）で、物理法則は同じ形をしている。窓のない部屋の中でどんな実験をしても、自分が「止まっている」のか「等速で動いている」のかは決められない。</p>
+      </li>
+      <li>
+        <span class="t">光速不変の原理</span>
+        <p>真空中の光の速さ c は、光源が動いていても、観測者が動いていても、同じ値になる。</p>
+      </li>
+    </ol>
+
+    <p>この二つはどちらも穏当に見えるが、並べると強烈な結論が出てくる。速さとは「距離 ÷ 時間」だ。距離も時間も観測者によらず決まっていて、なおかつ光速だけが誰にとっても同じ、ということはありえない。どちらかを諦めなければならない。</p>
+
+    <p>アインシュタインが諦めたのは、<strong>距離と時間のほうが誰にとっても同じ</strong>という前提だった。</p>
+
+    <div class="keypoint">時間が変化するから光速が一定になるのではない。光速が一定であるという宇宙の性質から、時間と空間のあり方が決まってくる。</div>
+
+    <p>向きが逆であることが、ここでは大事になる。光速不変は結果ではなく前提で、時間の遅れのほうが、そこから導かれる結果のほうだ。</p>
+  </section>
+
+  <section class="ch">
+    <h2>足し算の、本当の形</h2>
+
+    <p>では日常の足し算は間違いだったのか、というとそうではない。正しい合成則は、こういう形をしている。</p>
+
+    <div class="formula">
+      w ＝ ( u ＋ v ) ／ ( 1 ＋ uv ／ c<sup>2</sup> )
+      <span class="note">u：電車から見たボールの速さ ／ v：地上から見た電車の速さ ／ w：地上から見たボールの速さ</span>
+    </div>
+
+    <p>日常の速さでは uv/c² が途方もなく小さいので、分母はほぼ 1 になり、w ≒ u + v に戻る。時速120kmは正しい。ずれは小数点以下、何十桁も先にある。</p>
+
+    <p>ところが u に c を入れると、分子は c + v、分母は 1 + v/c となり、計算すると答えはぴったり c になる。どんな v を入れても c のままだ。足し算の式そのものに、「光速を超えられない」という性質が最初から織り込まれている。</p>
+  </section>
+
+  <section class="ch">
+    <h2>何に対しての、速さなのか</h2>
+
+    <p>ここでもう一つの疑問が出てくる。地球は自転し、太陽のまわりを回り、太陽系は銀河を回り、銀河も動いている。宇宙そのものが膨張している。<strong>そもそも私たちは、何に対して速さを測っているのか。</strong></p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 120" role="img" aria-labelledby="f2-t">
+        <title id="f2-t">基準は入れ子になっていて、いちばん外側がない</title>
+        <text class="lb" x="16" y="20">「速さ」は、いつも何かに対しての速さ</text>
+        <rect class="box" x="8" y="38" width="96" height="46" rx="8"/>
+        <rect class="box" x="118" y="38" width="96" height="46" rx="8"/>
+        <rect class="box" x="228" y="38" width="96" height="46" rx="8"/>
+        <rect class="box" x="338" y="38" width="96" height="46" rx="8"/>
+        <rect class="box" x="448" y="38" width="96" height="46" rx="8"/>
+        <rect class="fill-0" x="558" y="38" width="74" height="46" rx="8" stroke-dasharray="5 4" stroke="#8f97ad" fill-opacity="0"/>
+        <path class="s-f" d="M106 61 H116" marker-end="url(#ar-f)"/>
+        <path class="s-f" d="M216 61 H226" marker-end="url(#ar-f)"/>
+        <path class="s-f" d="M326 61 H336" marker-end="url(#ar-f)"/>
+        <path class="s-f" d="M436 61 H446" marker-end="url(#ar-f)"/>
+        <path class="s-f-d" d="M546 61 H556"/>
+        <text x="56" y="67" text-anchor="middle">人</text>
+        <text x="166" y="67" text-anchor="middle">電車</text>
+        <text x="276" y="67" text-anchor="middle">地面</text>
+        <text x="386" y="67" text-anchor="middle">太陽</text>
+        <text x="496" y="67" text-anchor="middle">銀河</text>
+        <text class="te" x="595" y="67" text-anchor="middle">？</text>
+        <text class="lb" x="632" y="104" text-anchor="end">いちばん外側の「絶対に止まっている場所」は、見つかっていない</text>
+      </svg>
+      <figcaption>速さは必ず、何か別のものを基準にして決まる。基準は次々に外へたどれるが、その終点はない。</figcaption>
+    </figure>
+
+    <p>答えは、拍子抜けするほど単純だった。<strong>基準はない。</strong>「絶対に止まっている場所」は、どれだけ探しても見つからなかった。だから「速さ」という言葉は、必ず「何に対して」を伴わないと意味をなさない。</p>
+
+    <p>ただし例外がひとつある。光速 c だけは、どの立場から測っても同じ値になる。相対的でない量が、この宇宙にひとつだけある。だからこそ c は、単なる「光の速さ」を超えた意味を持つ。時間と空間を結びつける、宇宙の変換定数のようなものだ。</p>
+
+    <p>実際いまでは、c は測る量ですらない。1983年に、1メートルのほうが「光が1秒の299,792,458分の1のあいだに進む距離」として定義し直された。c＝299,792,458 m/s は、測定値ではなく定義値になっている。</p>
+
+    <div class="terms">
+      <span class="k">ことばの整理</span>
+      <dl>
+        <dt>慣性系</dt>
+        <dd>加速していない立場のこと。等速で動いているか、止まっているか。その区別自体ができないので、両者は同じものとして扱われる。</dd>
+        <dt>光速不変の原理</dt>
+        <dd>真空中の光速 c が、光源の運動にも観測者の運動にもよらないこと。特殊相対性理論の第二の前提。</dd>
+        <dt>c</dt>
+        <dd>秒速およそ30万km。ただし本質は「光の速さ」ではなく、質量ゼロのものが必ず出す速さであり、時間と空間を結ぶ換算係数でもある。</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="ch">
+    <h2>では、なぜ光速は一定なのか</h2>
+
+    <p>ここが行き止まりになる。相対性理論の内側では、この問いに答えは出ない。光速不変は理論が説明する対象ではなく、理論が立つための土台として置かれているからだ。</p>
+
+    <p>手がかりがないわけではない。マクスウェルが電磁気の法則をまとめたとき、光の速さは真空そのものの性質だけから決まる形で式に現れた。そこには「誰から見て」という余地が入っていない。理論の形のほうが、最初から観測者を選ばない作りになっていた。</p>
+
+    <p>ただし、それは「なぜ電磁気の法則がその形なのか」に問いを移しただけとも言える。さらに掘れば「なぜ宇宙はこの基本法則を持っているのか」という、物理学そのものの外側に近い問いになる。このノートでは、そこは開いたまま先へ進む。</p>
+
+    <div class="myth">
+      <span class="k">よくある誤解</span>
+      <p class="x">✕　光はとても速いので、日常では足し算の誤差が見えないだけ。</p>
+      <p>○　速さの問題ではない。光速は「速度の上限」であり、時空の構造そのものに組み込まれた定数。質量ゼロの粒子は<strong>必ず</strong> c で進み、それより遅くも速くもなれない。逆に質量を持つものは、どれだけエネルギーを注いでも c に到達できない。</p>
+    </div>
+
+    <div class="q">
+      <p class="q-label">残る問い</p>
+      <ul>
+        <li>なぜ宇宙の基本法則は、観測者を選ばない形をしているのか。</li>
+        <li>c は「光の速さ」なのか、それとも先に時空の構造として c があり、光がたまたまそれに乗っているだけなのか。</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<nav class="pager" aria-label="前後のページ">
+  <a class="prev" href="index.html"><span class="k">← 前へ</span><span class="t">時間とは何か — 入口</span></a>
+  <a class="next" href="dilation.html"><span class="k">次へ →</span><span class="t">02 なぜ、速く動くと時間が遅れるのか</span></a>
+</nav>
+
+<nav class="sitemap" aria-label="このサイトの地図">
+  <h2>このサイトの地図</h2>
+  <div class="grp">
+    <p class="k">第1部 特殊相対性理論</p>
+    <ul>
+      <li><a href="light.html">01 光の速さは、誰から見ても同じ</a></li>
+      <li><a href="dilation.html">02 なぜ、速く動くと時間が遅れるのか</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">第2部 時空</p>
+    <ul>
+      <li><a href="spacetime.html">03 XYZ に T を足しただけではない</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">第3部 一般相対性理論</p>
+    <ul>
+      <li><a href="gravity.html">04 重力は、時空の曲がり</a></li>
+      <li><a href="blackhole.html">05 ブラックホール</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">その先</p>
+    <ul>
+      <li><a href="questions.html">06 まだ答えの出ていない問い</a></li>
+    </ul>
+  </div>
+</nav>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>専門家ではない個人が調べ、考えたことをまとめた個人的なまとめです。内容の正確性を保証するものではありません。</p>
+    <p><a href="../">← m-note トップ</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

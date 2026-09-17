@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>時間とは何か ｜ m-note</title>
+<meta name="description" content="時間は、誰にとっても同じように流れているのか。光速不変という一点から出発して、時間の遅れ、時空と世界線、重力による時空の曲がり、ブラックホール、そして量子論と時間まで。「時間が遅れる」という現象を覚えるのではなく、なぜ空間と時間がひとつの時空として扱われるのかを辿る個人的なまとめ。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <marker id="ar-i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+    <marker id="ar-e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+    <marker id="ar-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="sitemark" href="index.html">TIME ｜ 時間とは何か</a>
+    <a class="back" href="../">← m-note トップ</a>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <div class="hero">
+    <p class="part-label">WHAT IS TIME</p>
+    <h1>時間は、誰にとっても<br>同じように流れている。<br><span class="em">——そう思っていたところから始まった。</span></h1>
+    <p class="lede">壁の時計も、腕の時計も、遠くの街の時計も、同じ速さで進んでいる。時間とは世界にひとつだけ掛かっている大きな時計で、私たちはその下でそれぞれの一生を過ごしている。そう考えるのが自然だった。</p>
+    <p class="lede">ところが相対性理論は、そうではないと言う。速く動けば時間は遅れる。重力の強い場所でも時間は遅れる。では、なぜそんなことが起きるのか。掘っていくと、たった一つの奇妙な事実に行き着いた——<strong>光の速さは、誰から見ても同じである</strong>。このノートは、その一点から時間を組み立て直していく記録だ。</p>
+
+    <svg class="motif" viewBox="0 0 640 60" role="img" aria-labelledby="motif-t">
+      <title id="motif-t">同じ区間に刻まれる、目盛りの数のちがい</title>
+      <path class="wl-a" d="M74 18 H620"/>
+      <path class="wl-b" d="M74 46 H620"/>
+      <g class="tick">
+        <path d="M74 12 V24"/><path d="M114 12 V24"/><path d="M154 12 V24"/><path d="M194 12 V24"/>
+        <path d="M234 12 V24"/><path d="M274 12 V24"/><path d="M314 12 V24"/><path d="M354 12 V24"/>
+        <path d="M394 12 V24"/><path d="M434 12 V24"/><path d="M474 12 V24"/><path d="M514 12 V24"/>
+        <path d="M554 12 V24"/><path d="M594 12 V24"/>
+      </g>
+      <g class="tick-b">
+        <path d="M74 40 V52"/><path d="M139 40 V52"/><path d="M204 40 V52"/><path d="M269 40 V52"/>
+        <path d="M334 40 V52"/><path d="M399 40 V52"/><path d="M464 40 V52"/><path d="M529 40 V52"/>
+        <path d="M594 40 V52"/>
+      </g>
+      <circle class="pulse" cx="594" cy="46" r="3.5"/>
+      <text class="t-a" x="0" y="22">静止</text>
+      <text class="t-b" x="0" y="50">高速</text>
+    </svg>
+  </div>
+
+  <section class="ch">
+    <h2>「なぜ？」を掘ると、一本の筋が出てくる</h2>
+    <p>速く動くと時間が遅れる、と聞いても納得はできない。なぜ速さが、時間などという別のものに影響するのか。その「なぜ」を一段ずつ掘っていくと、意外なことに、話はどんどん単純なほうへ向かっていった。</p>
+    <p>時間が遅れるのは、時計の機械が狂うからではない。人間の感覚が鈍るからでもない。光の速さを誰から見ても同じに保とうとすると、<strong>時間と空間の測り方そのもの</strong>が観測者ごとに変わらざるをえない。それだけのことだった。そして時間と空間がそこまで絡み合っているなら、二つを別々に扱うのをやめて、ひとつの「時空」として見たほうがいい——という話になる。</p>
+
+    <div class="keypoint">「時間が遅れる」を覚えるのではなく、なぜ空間と時間がひとつの時空として扱われるのかを理解する。それがこのノートの目的。</div>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 344" role="img" aria-labelledby="fladder-t">
+        <title id="fladder-t">光速不変から、ブラックホールまで</title>
+        <text x="32" y="26">「そもそも、時間とは何なのか」</text>
+        <text class="lb" x="32" y="46">ここは、まだ埋まっていない</text>
+        <path class="s-f" d="M120 84 V58" marker-end="url(#ar-f)"/>
+        <rect class="box fill-4" x="16" y="90" width="430" height="40" rx="8"/>
+        <rect class="box fill-3" x="16" y="138" width="430" height="40" rx="8"/>
+        <rect class="box fill-2" x="16" y="186" width="430" height="40" rx="8"/>
+        <rect class="box fill-1" x="16" y="234" width="430" height="40" rx="8"/>
+        <rect class="box fill-0" x="16" y="282" width="430" height="40" rx="8"/>
+        <text x="32" y="115">ブラックホール — 時空が極端になる場所</text>
+        <text x="32" y="163">時空の曲がりとしての重力</text>
+        <text x="32" y="211">時空 — 世界線と固有時</text>
+        <text x="32" y="259">時間の遅れと、長さの縮み</text>
+        <text x="32" y="307">光速は、誰から見ても同じ</text>
+        <text class="lb" x="462" y="114">第3部</text>
+        <text class="lb" x="462" y="162">第3部</text>
+        <text class="lb" x="462" y="210">第2部</text>
+        <text class="lb" x="462" y="258">第1部</text>
+        <text class="lb" x="462" y="306">第1部</text>
+      </svg>
+      <figcaption>下の段ほど、実験で確かめられている。上の段ほど、計算はできても直感が追いつかない。いちばん上の一段——時間そのものが何なのか——には、相対性理論は答えを出していない。</figcaption>
+    </figure>
+  </section>
+
+  <section class="ch">
+    <h2>このノートの歩き方</h2>
+    <p>いきなり「時間とは何か」という哲学の問いに飛びつかず、まず物理学が時間をどういう構造として扱っているのかを、下から順に見ていく。第1部から第3部までは一本道で、前の章の言葉だけで次の章が読めるように組んである。</p>
+    <p>数式は、意味が変わってしまう場所にだけ置いた。読み飛ばしても筋は切れない。</p>
+
+    <a class="partcard" href="light.html">
+      <span class="k">第1部 特殊相対性理論</span>
+      <span class="t">動くと、なぜ時間が遅れるのか</span>
+      <span class="d">01 光の速さは、誰から見ても同じ ・ 02 なぜ、速く動くと時間が遅れるのか</span>
+    </a>
+
+    <a class="partcard" href="spacetime.html">
+      <span class="k">第2部 時空</span>
+      <span class="t">空間と時間は、切り離せない</span>
+      <span class="d">03 XYZ に T を足しただけではない — 世界線と固有時</span>
+    </a>
+
+    <a class="partcard" href="gravity.html">
+      <span class="k">第3部 一般相対性理論</span>
+      <span class="t">重力とは、時空の曲がりのことだった</span>
+      <span class="d">04 重力は、時空の曲がり ・ 05 ブラックホール</span>
+    </a>
+
+    <div class="colcard">
+      <a href="questions.html">
+        <span class="k">その先</span>
+        <span class="t">まだ答えの出ていない問い</span>
+        <span class="d">量子論の時間と相対論の時間 ・ 時間に向きはあるのか ・ 時間は本当に存在するのか ・ なぜ私たちは時間が流れていると感じるのか</span>
+      </a>
+    </div>
+  </section>
+
+  <section class="ch">
+    <h2>先に、答えが出ないことを書いておく</h2>
+    <p>このノートを最後まで読んでも、最初の問いには答えが出ない。相対性理論が教えてくれるのは、時間が<em>どう振る舞うか</em>であって、時間が<em>何であるか</em>ではないからだ。</p>
+    <p>光速がなぜ一定なのかも、質量がなぜ時空を曲げるのかも、この理論の内側では説明されない。それらは出発点として置かれた「宇宙はそういうものだ」という前提で、そこから先は数学が正確に答えてくれる。前提そのものの理由を問うと、物理学のもっと根の深い問題に出てしまう。</p>
+
+    <div class="q">
+      <p class="q-label">残る問い</p>
+      <ul>
+        <li>なぜ宇宙は、光速が一定であるような時空の構造をしているのか。</li>
+        <li>時間は本当に存在するのか。それとも「流れている」という感覚のほうが、脳の作り出したものなのか。</li>
+        <li>相対性理論の時間と、量子力学の時間は、なぜ噛み合わないのか。</li>
+        <li>宇宙の始まりより前に、時間はあったのか。</li>
+      </ul>
+    </div>
+
+    <p>それでも、途中までは驚くほど具体的に辿れる。どこまでが実験で確かめられていて、どこから先が解釈や仮説なのか。その境目が自分で見えるようになること——それを、このノートの到達点にしている。</p>
+  </section>
+
+</main>
+
+<nav class="sitemap" aria-label="このサイトの地図">
+  <h2>このサイトの地図</h2>
+  <div class="grp">
+    <p class="k">第1部 特殊相対性理論</p>
+    <ul>
+      <li><a href="light.html">01 光の速さは、誰から見ても同じ</a></li>
+      <li><a href="dilation.html">02 なぜ、速く動くと時間が遅れるのか</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">第2部 時空</p>
+    <ul>
+      <li><a href="spacetime.html">03 XYZ に T を足しただけではない</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">第3部 一般相対性理論</p>
+    <ul>
+      <li><a href="gravity.html">04 重力は、時空の曲がり</a></li>
+      <li><a href="blackhole.html">05 ブラックホール</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">その先</p>
+    <ul>
+      <li><a href="questions.html">06 まだ答えの出ていない問い</a></li>
+    </ul>
+  </div>
+</nav>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>専門家ではない個人が調べ、考えたことをまとめた個人的なまとめです。内容の正確性を保証するものではありません。</p>
+    <p><a href="../">← m-note トップ</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

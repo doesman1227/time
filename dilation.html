@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>02 なぜ、速く動くと時間が遅れるのか ｜ 時間とは何か</title>
+<meta name="description" content="光時計という思考実験から、速度による時間の遅れを自分で導いてみる。ローレンツ因子、双子のパラドックス、ミュー粒子が地上に届く理由、そして飛行機によく乗る人の時計が実際にどれだけずれるのか。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <marker id="ar-i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+    <marker id="ar-e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+    <marker id="ar-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="sitemark" href="index.html">TIME ｜ 時間とは何か</a>
+    <a class="back" href="../">← m-note トップ</a>
+  </div>
+</header>
+
+<nav class="crumb" aria-label="パンくず">
+  <a href="index.html">時間とは何か</a><span>›</span><span>第1部</span><span>›</span><span>02 なぜ、速く動くと時間が遅れるのか</span>
+</nav>
+
+<main class="wrap">
+
+  <p class="part-label">第1部 特殊相対性理論 ／ 02</p>
+  <h1>なぜ、速く動くと<br><span class="em">時間が遅れるのか</span></h1>
+  <p class="lede">「速いから時間が遅くなる」と言われても、納得できなかった。速さと時間は別のものではないのか。だが前の章の前提を一つ認めてしまうと、この結論は避けられなくなる。中学校で習う三角形の定理だけで、そこまで辿り着ける。</p>
+
+  <div class="summary">
+    <span class="k">この章の要点</span>
+    <ul>
+      <li>光で時を刻む時計を考えると、動いている時計では光の経路が<strong>斜めに伸びる</strong>。</li>
+      <li>経路が伸びても光速は変わらないので、外から見ると1回の往復に余計に時間がかかる。</li>
+      <li>遅れの大きさはローレンツ因子 γ で決まる。光速の90%でおよそ2.3倍。</li>
+      <li>動いている本人は、自分の時間が遅れたとは<strong>まったく感じない</strong>。</li>
+      <li>飛行機や宇宙ステーションの時計でも、実際にナノ秒・マイクロ秒の単位で確かめられている。</li>
+    </ul>
+  </div>
+
+  <section class="ch">
+    <h2>光で時を刻む時計</h2>
+
+    <p>納得するために、いちばん単純な時計を考える。向かい合わせに置いた二枚の鏡のあいだを、光が往復する。一往復を「1カチッ」と数える。それだけの時計だ。中身が光だけなので、光速不変の原理がそのまま効いてくる。</p>
+
+    <p>この時計を、まず机の上に静かに置く。光はまっすぐ上下に往復し、規則正しく時を刻む。</p>
+
+    <p>次に、この時計をロケットに積んで、横方向に高速で飛ばす。<strong>ロケットの中にいる人</strong>から見れば、何も変わらない。光は相変わらず上下に往復している。ところが<strong>外で見送っている人</strong>から見ると、光が下の鏡を出て上の鏡に着くまでのあいだに、時計そのものが横にずれている。だから光は、斜めの経路を進んだように見える。</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 260" role="img" aria-labelledby="f1-t">
+        <title id="f1-t">静止した光時計と、動く光時計</title>
+        <text class="lb" x="16" y="20">止まっている時計</text>
+        <path class="s-f" d="M40 52 H176"/>
+        <path class="s-f" d="M40 196 H176"/>
+        <path class="s-e" d="M104 196 V62" marker-end="url(#ar-e)"/>
+        <circle class="f-e" cx="104" cy="196" r="4"/>
+        <text class="lb" x="108" y="130">光</text>
+        <text class="lb" x="16" y="228">光はまっすぐ上下に往復する</text>
+
+        <path class="s-l" d="M208 30 V226"/>
+
+        <text class="lb" x="240" y="20">横に動いている時計（外から見ると）</text>
+        <path class="s-f" d="M248 52 H316"/><path class="s-f" d="M248 196 H316"/>
+        <path class="s-f" d="M400 52 H468"/><path class="s-f" d="M400 196 H468"/>
+        <path class="s-f" d="M552 52 H620"/><path class="s-f" d="M552 196 H620"/>
+        <path class="s-e" d="M282 196 L434 56"/>
+        <path class="s-e" d="M434 56 L586 192" marker-end="url(#ar-e)"/>
+        <circle class="f-e" cx="282" cy="196" r="4"/>
+        <path class="s-f" d="M282 232 H586" marker-end="url(#ar-f)"/>
+        <text class="lb" x="424" y="250" text-anchor="middle">時計そのものが動いた分</text>
+        <text class="te" x="330" y="120">斜めの、長い経路</text>
+      </svg>
+      <figcaption>中の人にとっては、どちらも同じ上下の往復。外の人にとっては、右の光は明らかに長い距離を進んでいる。それでも光の速さは両者で同じでなければならない。</figcaption>
+    </figure>
+
+    <p>ここで前提が効く。<strong>光の速さは、どちらの立場でも同じ c</strong> だ。速さが同じで距離が長いなら、かかる時間は長い。つまり外から見ると、動いている時計の「1カチッ」には、余計に時間がかかっている。<span class="err">時計が遅れて見える</span>。</p>
+
+    <p>光時計は特別な装置ではないか、という疑問は当然出てくる。だがもし光時計だけが遅れて腕時計が遅れないなら、ロケットの中で二つを見比べるだけで「自分は動いている」と分かってしまい、相対性原理が壊れる。遅れるのは時計ではなく、その立場における<strong>時間そのもの</strong>でなければならない。</p>
+  </section>
+
+  <section class="ch">
+    <h2>三角形ひとつで、式が出る</h2>
+
+    <p>斜めの経路は、直角三角形の斜辺になっている。縦の辺は鏡の間隔、横の辺は時計が動いた距離、斜辺は光が実際に進んだ距離だ。</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 220" role="img" aria-labelledby="f2-t">
+        <title id="f2-t">光の経路がつくる直角三角形</title>
+        <path class="s-f" d="M170 180 V50"/>
+        <path class="s-f" d="M170 50 H470"/>
+        <path class="s-e" d="M170 180 L470 50" marker-end="url(#ar-e)"/>
+        <path class="s-l" d="M170 168 H182 V180"/>
+        <circle class="f-e" cx="170" cy="180" r="4"/>
+        <text class="lb" x="156" y="120" text-anchor="end">鏡の間隔</text>
+        <text class="ti" x="156" y="142" text-anchor="end">＝ c t′</text>
+        <text class="lb" x="320" y="38" text-anchor="middle">時計が動いた距離 ＝ v t</text>
+        <text class="te" x="356" y="132">光が進んだ距離 ＝ c t</text>
+        <text class="lb" x="16" y="206">t′：時計といっしょに動く人が測った時間　／　t：外の人が測った時間</text>
+      </svg>
+      <figcaption>光が縦に進む「はずだった」距離が c t′、実際に斜めに進んだ距離が c t。この二つの差が、そのまま時間のずれになる。</figcaption>
+    </figure>
+
+    <p>三平方の定理をそのまま当てはめる。</p>
+
+    <div class="formula">
+      ( c t )<sup>2</sup> ＝ ( c t′ )<sup>2</sup> ＋ ( v t )<sup>2</sup>
+      <span class="note">整理すると</span>
+      t ＝ t′ ／ √( 1 − v<sup>2</sup>／c<sup>2</sup> ) ＝ γ t′
+    </div>
+
+    <p>この γ（ガンマ）を<strong>ローレンツ因子</strong>と呼ぶ。中の人の1秒が、外から見ると γ 秒に引き伸ばされる。難しい物理は一つも使っていない。「光速はどちらから見ても同じ」を一度認めただけで、こうなってしまう。</p>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr><th>速さ</th><th>γ</th><th>中の人の1年は、外では</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>時速900km（旅客機）</td><td>1.0000000000003</td><td>1年＋約10マイクロ秒</td></tr>
+          <tr><td>秒速7.7km（宇宙ステーション）</td><td>1.0000000003</td><td>1年＋約10ミリ秒</td></tr>
+          <tr><td>光速の10%</td><td>1.005</td><td>約1年と1.8日</td></tr>
+          <tr><td>光速の50%</td><td>1.155</td><td>約1年と57日</td></tr>
+          <tr><td>光速の90%</td><td>2.294</td><td>約2年3か月</td></tr>
+          <tr><td>光速の99%</td><td>7.089</td><td>約7年</td></tr>
+          <tr><td>光速の99.9%</td><td>22.37</td><td>約22年</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>日常の速さでは、γ は 1 と区別がつかないほど 1 に近い。飛行機によく乗る人と、ほとんど乗らない人のあいだにも原理的には差が生じているが、その差は一生かけてもナノ秒の単位にしかならない。相対論が「特殊な宇宙の話」に見えるのは、私たちが遅すぎるからだ。</p>
+
+    <p>逆に、v が c に近づくと γ は急激に大きくなり、v ＝ c では分母がゼロになって発散する。質量を持つものが光速に到達できないのは、この式がそこで破綻するからでもある。</p>
+  </section>
+
+  <section class="ch">
+    <h2>「遅れる」は、本人にとっての遅さではない</h2>
+
+    <p>ここは誤解しやすいところで、自分も最初に引っかかった。</p>
+
+    <div class="myth">
+      <span class="k">よくある誤解</span>
+      <p class="x">✕　高速で移動する人は、自分の時間がゆっくり進むのを感じる。世界がスローモーションに見える。</p>
+      <p>○　本人にとっては何も変わらない。時計は正常に進み、心臓も普通に打ち、コーヒーも普通に冷める。自分の時間が遅れていると感じる瞬間は、一度もない。</p>
+    </div>
+
+    <p>相対性理論が言っているのは、<strong>異なる経路をたどった二人が再会して時計を見比べたとき、経過した時間が違っている</strong>ということだ。「今この瞬間に誰の時間が遅いか」という問いではない。比べられるのは、出発から再会までに刻まれた総量だけになる。</p>
+
+    <div class="keypoint">それぞれが自分の時間を、ごく普通に生きている。違うのは、再会したときに手元に溜まっている時間の量のほう。</div>
+
+    <p>さらにややこしいのは、遅れ方が<strong>お互いさま</strong>だという点だ。地球から見ると宇宙船の時計が遅れている。だが宇宙船から見れば、遠ざかっているのは地球のほうで、地球の時計が遅れている。等速で動いているかぎり、どちらが「本当に動いている」とは言えないのだから、そうなるしかない。</p>
+
+    <p>ではなぜ、宇宙船で旅に出た双子だけが若いまま帰ってくるのか。矛盾しているように見えるこの問題は、実は「どちらが動いたか」では解けない。二人がたどった<strong>時空の中での経路</strong>を比べると、きれいに解ける。それが次の章になる。</p>
+  </section>
+
+  <section class="ch">
+    <h2>本当に起きている、という証拠</h2>
+
+    <h3>空から降ってくるミュー粒子</h3>
+    <p>宇宙線が大気の上層にぶつかると、ミュー粒子という粒子が生まれる。高度はおよそ15km。ミュー粒子は不安定で、平均2.2マイクロ秒ほどで崩壊してしまう。光速で進んだとしても、その間に進める距離はわずか660mほどしかない。計算上、地上に届くはずがない。</p>
+    <p>ところが実際には、大量のミュー粒子が地上で観測される。ミュー粒子は光速に近い速さで飛んでいるので、地上から見ればその内部時計が大きく引き伸ばされ、崩壊するまでに15kmを走りきってしまう。1963年の山岳での観測以来、この「届くはずのないものが届く」現象は繰り返し確かめられている。</p>
+
+    <p>面白いのは、ミュー粒子自身の立場から見ても矛盾しない点だ。ミュー粒子にとって自分の寿命は2.2マイクロ秒のままだが、そのかわり進行方向の距離が縮んで、大気の厚さが15kmではなく数百mになっている。<strong>時間の遅れと長さの縮みは、同じ一つの現象を別の側から見たもの</strong>で、どちらの立場から計算しても「地上に届く」という同じ結論になる。</p>
+
+    <h3>飛行機に乗ると、時計はどうずれるか</h3>
+    <p>1971年、ヘイフリーとキーティングが原子時計を旅客機に積んで地球を一周させ、地上に置いた時計と比べた。結果は、東回りで約59ナノ秒の<strong>遅れ</strong>、西回りで約273ナノ秒の<strong>進み</strong>。理論の予測とよく一致した。</p>
+
+    <p>東と西で符号が変わるのは、地球そのものが自転しているためだ。速度による遅れは、地球の中心から見た速さで決まる。東回りの飛行機は自転に速さを足す形になり、西回りは差し引く形になる。</p>
+
+    <p>さらに、飛行機では高度による効果も同時に効いてくる。これは次の章の先取りになるが、高いところでは時間が速く進む。10時間のフライトで見積もると、おおよそこうなる。</p>
+
+    <div class="duo">
+      <div class="card">
+        <span class="k">速度による効果</span>
+        <span class="t">約13ナノ秒 遅れる</span>
+        <p>時速900kmで10時間。地上に残った人より、わずかに時計が遅れる。</p>
+      </div>
+      <div class="card b">
+        <span class="k">高度による効果</span>
+        <span class="t">約39ナノ秒 進む</span>
+        <p>高度10kmでは重力がわずかに弱く、時間が速く進む。こちらのほうが大きい。</p>
+      </div>
+    </div>
+
+    <p>差し引きすると、フライト1回あたり20〜30ナノ秒ほど<strong>先に進む</strong>。「飛行機によく乗る人は時間が遅れているのでは」と考えていたが、実際には逆で、ごくわずかに未来側へずれていることになる。もっとも、一生飛び続けても、その総量はまばたき一回にも遠く及ばない。</p>
+
+    <p>そして今日、この効果は無視できない場面がある。GPS衛星の時計は、補正しなければ1日で数十マイクロ秒ずれてしまい、位置が数kmも狂う。カーナビが正しく動いているという事実そのものが、相対論が日常世界で成立している証拠になっている。</p>
+
+    <div class="q">
+      <p class="q-label">残る問い</p>
+      <ul>
+        <li>お互いに相手の時計が遅れて見えるのに、再会したときの差は一意に決まる。その非対称はどこから来るのか。</li>
+        <li>時間の遅れと長さの縮みが同じ現象の裏表だとすれば、時間と空間はどこまで同じものなのか。</li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<nav class="pager" aria-label="前後のページ">
+  <a class="prev" href="light.html"><span class="k">← 前へ</span><span class="t">01 光の速さは、誰から見ても同じ</span></a>
+  <a class="next" href="spacetime.html"><span class="k">次へ →</span><span class="t">03 XYZ に T を足しただけではない</span></a>
+</nav>
+
+<nav class="sitemap" aria-label="このサイトの地図">
+  <h2>このサイトの地図</h2>
+  <div class="grp">
+    <p class="k">第1部 特殊相対性理論</p>
+    <ul>
+      <li><a href="light.html">01 光の速さは、誰から見ても同じ</a></li>
+      <li><a href="dilation.html">02 なぜ、速く動くと時間が遅れるのか</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">第2部 時空</p>
+    <ul>
+      <li><a href="spacetime.html">03 XYZ に T を足しただけではない</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">第3部 一般相対性理論</p>
+    <ul>
+      <li><a href="gravity.html">04 重力は、時空の曲がり</a></li>
+      <li><a href="blackhole.html">05 ブラックホール</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">その先</p>
+    <ul>
+      <li><a href="questions.html">06 まだ答えの出ていない問い</a></li>
+    </ul>
+  </div>
+</nav>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>専門家ではない個人が調べ、考えたことをまとめた個人的なまとめです。内容の正確性を保証するものではありません。</p>
+    <p><a href="../">← m-note トップ</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

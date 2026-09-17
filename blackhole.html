@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>05 ブラックホール ｜ 時間とは何か</title>
+<meta name="description" content="時空の曲がりが極端になった場所では、時間と空間に何が起きるのか。事象の地平面、外から見た落下と本人から見た落下の違い、光円錐が倒れるという意味、そして「特異点は場所ではなく時刻である」という帰結。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⏳</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&family=Noto+Serif+JP:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg width="0" height="0" aria-hidden="true" focusable="false" style="position:absolute">
+  <defs>
+    <marker id="ar-i" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+    <marker id="ar-e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+    <marker id="ar-f" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z"/></marker>
+  </defs>
+</svg>
+
+<header class="top">
+  <div class="wrap">
+    <a class="sitemark" href="index.html">TIME ｜ 時間とは何か</a>
+    <a class="back" href="../">← m-note トップ</a>
+  </div>
+</header>
+
+<nav class="crumb" aria-label="パンくず">
+  <a href="index.html">時間とは何か</a><span>›</span><span>第3部</span><span>›</span><span>05 ブラックホール</span>
+</nav>
+
+<main class="wrap">
+
+  <p class="part-label">第3部 一般相対性理論 ／ 05</p>
+  <h1>ブラックホール<br><span class="em">— 時空が極端になる場所</span></h1>
+  <p class="lede">ここまでの話は、どれも「ごくわずかなずれ」だった。ナノ秒、マイクロ秒。ブラックホールは、その同じ効果が限界まで振り切れた場所だ。だからこそ、時空という考え方が単なる数学上の便利な言い換えではないことが、いちばんはっきり見える。</p>
+
+  <div class="summary">
+    <span class="k">この章の要点</span>
+    <ul>
+      <li>事象の地平面とは、光ですら外に出られなくなる境界のこと。</li>
+      <li>外から見ると、落ちていく人の時計は限りなくゆっくりになり、地平面に届くところは見られない。</li>
+      <li>落ちている本人にとっては、時間はふつうに進み、有限の時間で地平面を通過する。</li>
+      <li>地平面の内側では、中心へ向かうことが「未来へ進む」ことと同じになる。</li>
+      <li>特異点は「場所」ではなく、避けられない「時刻」として現れる。</li>
+    </ul>
+  </div>
+
+  <section class="ch">
+    <h2>どこまで圧縮すると、こうなるのか</h2>
+
+    <p>ある質量を、ある半径より小さく押し込めると、そこから光は出られなくなる。この境目の半径を<strong>シュワルツシルト半径</strong>という。式は驚くほど単純だ。</p>
+
+    <div class="formula">
+      r<sub>s</sub> ＝ 2 G M ／ c<sup>2</sup>
+      <span class="note">M：質量　G：万有引力定数　c：光速</span>
+    </div>
+
+    <div class="tbl-scroll">
+      <table>
+        <thead>
+          <tr><th>これを圧縮すると</th><th>この半径より小さくなったとき</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>体重60kgの人</td><td>約 0.00000000000000000000000009 m</td></tr>
+          <tr><td>地球</td><td>約 9mm（ビー玉ほど）</td></tr>
+          <tr><td>太陽</td><td>約 3km</td></tr>
+          <tr><td>いて座A＊（天の川銀河の中心）</td><td>約 1,270万km（水星の軌道の内側に収まる）</td></tr>
+          <tr><td>M87＊（2019年に撮影された天体）</td><td>約 190億km（太陽系をすっぽり包む）</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p>この半径が作る球面を<strong>事象の地平面</strong>と呼ぶ。そこには壁も膜もない。通り過ぎる瞬間に、何かがぶつかるわけでもない。ただ、そこから先で起きた出来事は、二度と外側に影響を及ぼせなくなる。地平線の向こう側が見えないのと同じ意味で、「見えない」という境界だ。</p>
+  </section>
+
+  <section class="ch">
+    <h2>落ちていく人を、外から見ると</h2>
+
+    <p>前の章の式を思い出す。重力が強いほど時間はゆっくり進み、その度合いは √(1 − r<sub>s</sub>/r) で決まる。r が r<sub>s</sub> に近づくと、この値はゼロへ向かう。</p>
+
+    <p>だから、ブラックホールへ落ちていく人を遠くから見ていると、その人の時計はどんどん遅くなる。動きがゆっくりになり、腕を上げる動作に何時間もかかるように見え、やがてほとんど止まる。地平面に到達する瞬間は、外の時間でいえば<strong>永遠に来ない</strong>。</p>
+
+    <p>ただし「いつまでも見え続ける」わけではない。その人から届く光はどんどん赤いほうへ引き伸ばされ、届く光子の数も急激に減っていく。実際には、ごく短時間で暗くなって見えなくなる。永遠に張りついた像が残るのではなく、消える。</p>
+
+    <div class="duo">
+      <div class="card">
+        <span class="k">外から見ると</span>
+        <span class="t">永遠に届かない</span>
+        <p>時計は限りなくゆっくりになり、地平面に触れる瞬間は観測されない。像は赤く暗くなって、やがて消える。</p>
+      </div>
+      <div class="card b">
+        <span class="k">本人から見ると</span>
+        <span class="t">あっという間に通過する</span>
+        <p>自分の時計はふつうに進む。有限の時間で地平面を越え、越えた瞬間に特別な感触はない。</p>
+      </div>
+    </div>
+
+    <p>この二つは矛盾していない。第1部と同じ構図が、極端な形で現れているだけだ。<strong>「誰にとっての時間か」を指定しないかぎり、問いが成立していない。</strong>宇宙全体に共通の一つの時計があるなら、どちらかが間違っていることになる。だが、そんな時計はない。</p>
+
+    <div class="keypoint">「いつ地平面に着くのか」に、立場によらない答えはない。問いの立て方のほうが、時空の構造に合っていない。</div>
+
+    <p>ついでに言えば、地平面のすぐ外側に滞在してから戻ってくれば、本当に未来へ旅ができる。数年過ごして戻ったら、外の世界では何十年も経っている。これは双子のパラドックスと同じことを、速度ではなく重力でやっているだけだ。</p>
+  </section>
+
+  <section class="ch">
+    <h2>光円錐が、倒れていく</h2>
+
+    <p>「地平面の内側では時間と空間が入れ替わる」という言い方をよく見かける。この文だけだと何を言っているのか分からなかったが、光円錐の図を描くと、意味がはっきりする。</p>
+
+    <p>第2部で見たとおり、時空の各点には光円錐がある。そこから行ける未来の範囲を示す、開いた V 字だ。平らな時空では、どの点でも V は同じ向きで立っている。ところが重い天体に近づくにつれ、この V が中心のほうへ傾きはじめる。</p>
+
+    <figure class="fig">
+      <svg viewBox="0 0 640 264" role="img" aria-labelledby="f1-t">
+        <title id="f1-t">中心に近づくほど、光円錐が倒れていく</title>
+        <text class="lb" x="16" y="20">↑ 上方向 ＝ 未来</text>
+        <path class="s-e-d" d="M200 36 V222"/>
+        <text class="te" x="206" y="34">事象の地平面</text>
+
+        <path class="axis" d="M630 222 H40" marker-end="url(#ar-f)"/>
+        <text class="lb" x="48" y="242">中心</text>
+        <text class="lb" x="624" y="242" text-anchor="end">遠く離れた場所</text>
+
+        <path class="cone" d="M560 196 L490 126 L630 126 Z"/>
+        <path class="cone" d="M400 196 L330 126 L445 126 Z"/>
+        <path class="cone" d="M262 196 L192 126 L270 126 Z"/>
+        <path class="cone" d="M130 196 L60 126 L105 126 Z"/>
+        <circle class="f-f" cx="560" cy="196" r="3"/>
+        <circle class="f-f" cx="400" cy="196" r="3"/>
+        <circle class="f-f" cx="262" cy="196" r="3"/>
+        <circle class="f-f" cx="130" cy="196" r="3"/>
+        <text class="lb" x="560" y="214" text-anchor="middle">まっすぐ</text>
+        <text class="lb" x="400" y="214" text-anchor="middle">傾く</text>
+        <text class="lb" x="262" y="214" text-anchor="middle">かろうじて</text>
+        <text class="lb" x="130" y="214" text-anchor="middle">すべて内向き</text>
+      </svg>
+      <figcaption>V字は「そこから行ける未来」の範囲。遠くでは左右対称だが、近づくほど中心側へ倒れる。地平面の内側では、どんなに頑張っても中心から遠ざかる未来が V の中に残っていない。</figcaption>
+    </figure>
+
+    <p>地平面のちょうど上では、外向きの光がその場に留まるのが精一杯になる。そして内側に入ると、V 字は完全に倒れてしまい、<strong>その中に「中心から遠ざかる」という選択肢が一つも残らない</strong>。</p>
+
+    <p>外側の世界では、私たちは空間の中を好きな方向へ動けるが、時間については未来へ進むしかない。「明日を避ける」ことはできない。地平面の内側では、中心へ近づくことが、これとまったく同じ意味で避けられなくなる。<strong>中心へ向かうことが、未来へ進むことになる。</strong>これが「時間と空間が入れ替わる」という表現の中身だった。</p>
+
+    <p>だから、内側にいる人にとって特異点は「遠くにある場所」ではない。<strong>避けられない、ある時刻</strong>として近づいてくる。どちらへ逃げても、明日が来るように、それは来る。</p>
+
+    <div class="terms">
+      <span class="k">ことばの整理</span>
+      <dl>
+        <dt>事象の地平面</dt>
+        <dd>そこで起きた出来事が、外側に一切影響を及ぼせなくなる境界。局所的には何の変哲もない場所。</dd>
+        <dt>特異点</dt>
+        <dd>計算上、曲がりが無限大になる点。ただしこれは「一般相対性理論がここで使えなくなる」という警告と解釈されている。</dd>
+        <dt>潮汐力</dt>
+        <dd>頭と足にかかる重力の差。小さいブラックホールでは地平面に達する前に体が引き伸ばされるが、巨大なものでは地平面通過時にも気づかないほど小さい。</dd>
+      </dl>
+    </div>
+  </section>
+
+  <section class="ch">
+    <h2>そして、理論が止まる場所</h2>
+
+    <p>中心の特異点では、時空の曲がりが無限大になる——と一般相対性理論は言う。だが物理学は、答えに無限大が出てきたとき、それを答えとしては受け取らない。理論が適用範囲の外に出た合図だと考える。</p>
+
+    <p>極端に小さく、極端に密度の高い領域では、量子力学が効いてくるはずだ。ところが量子力学と一般相対性理論は、いまだにうまく結婚できていない。ブラックホールの中心は、その不一致が最も露骨に現れる場所になっている。</p>
+
+    <p>時間という主題から見ると、対立ははっきりしている。一般相対性理論では、時間は場所ごとに進み方が変わる、曲がりうる舞台そのものだった。ところが量子力学では、時間は舞台の外から一様に流れる外部パラメータとして扱われる。<strong>二つの理論は、時間をまったく違うものとして扱っている。</strong></p>
+
+    <p>さらにホーキングは、量子効果を考えるとブラックホールがゆっくり熱を放射して蒸発することを示した。ではそこへ落ちた情報はどこへ行ったのか——この問いは、いまも決着していない。</p>
+
+    <div class="q">
+      <p class="q-label">残る問い</p>
+      <ul>
+        <li>特異点では、本当は何が起きているのか。時空はそこで終わっているのか。</li>
+        <li>ブラックホールが蒸発したあと、落ちた情報はどうなるのか。</li>
+        <li>時間を「曲がる舞台」とする理論と、「外から流れるパラメータ」とする理論を、どうすれば一つにできるのか。</li>
+      </ul>
+    </div>
+
+    <p>ここから先は、相対性理論だけでは進めない。最後の章では、残った問いを並べ直しておく。</p>
+  </section>
+
+</main>
+
+<nav class="pager" aria-label="前後のページ">
+  <a class="prev" href="gravity.html"><span class="k">← 前へ</span><span class="t">04 重力は、時空の曲がり</span></a>
+  <a class="next" href="questions.html"><span class="k">次へ →</span><span class="t">06 まだ答えの出ていない問い</span></a>
+</nav>
+
+<nav class="sitemap" aria-label="このサイトの地図">
+  <h2>このサイトの地図</h2>
+  <div class="grp">
+    <p class="k">第1部 特殊相対性理論</p>
+    <ul>
+      <li><a href="light.html">01 光の速さは、誰から見ても同じ</a></li>
+      <li><a href="dilation.html">02 なぜ、速く動くと時間が遅れるのか</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">第2部 時空</p>
+    <ul>
+      <li><a href="spacetime.html">03 XYZ に T を足しただけではない</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">第3部 一般相対性理論</p>
+    <ul>
+      <li><a href="gravity.html">04 重力は、時空の曲がり</a></li>
+      <li><a href="blackhole.html">05 ブラックホール</a></li>
+    </ul>
+  </div>
+  <div class="grp">
+    <p class="k">その先</p>
+    <ul>
+      <li><a href="questions.html">06 まだ答えの出ていない問い</a></li>
+    </ul>
+  </div>
+</nav>
+
+<footer class="foot">
+  <div class="wrap">
+    <p>専門家ではない個人が調べ、考えたことをまとめた個人的なまとめです。内容の正確性を保証するものではありません。</p>
+    <p><a href="../">← m-note トップ</a></p>
+  </div>
+</footer>
+
+</body>
+</html>
